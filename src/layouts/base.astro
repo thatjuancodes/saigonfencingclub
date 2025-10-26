@@ -1,0 +1,28 @@
+---
+import '@/styles/global.css';
+
+export interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Saigon Fencing – Saigon Fencing Club',
+  description = 'Saigon’s premier destination for fencing, basketball, pickleball, and high-performance training in Ho Chi Minh City.'
+} = Astro.props as Props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/png" href="/legacy/logo_trans_web.png" />
+    <slot name="head" />
+  </head>
+  <body class="home wp-singular page-template-default page page-id-17 wp-custom-logo wp-theme-Divi theme-Divi woocommerce-js tribe-js et_pb_button_helper_class et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db chrome" style="overflow-x: hidden;">
+    <slot />
+  </body>
+</html>
