@@ -211,6 +211,67 @@ import BaseLayout from '@/layouts/base.astro';
         line-height: 1.6 !important;
         margin: 0 !important;
       }
+      
+      /* Fix broken button icons - hide the "E" character */
+      .et_pb_button_1::after,
+      .et_pb_button_2::after,
+      .et_pb_button_3::after,
+      .et_pb_button_4::after,
+      .et_pb_button_5::after,
+      .et_pb_button_6::after {
+        display: none !important;
+        content: none !important;
+      }
+      
+      /* Fix class blurb icons */
+      .et_pb_blurb_8 .et-pb-icon,
+      .et_pb_blurb_9 .et-pb-icon,
+      .et_pb_blurb_10 .et-pb-icon,
+      .et_pb_blurb_11 .et-pb-icon {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 80px !important;
+        height: 80px !important;
+        font-size: 0 !important;
+      }
+      
+      .et_pb_blurb_8 .et-pb-icon::before,
+      .et_pb_blurb_9 .et-pb-icon::before,
+      .et_pb_blurb_10 .et-pb-icon::before,
+      .et_pb_blurb_11 .et-pb-icon::before {
+        font-size: 48px !important;
+        color: #b39d64 !important;
+        font-family: "ETmodules" !important;
+        speak: none !important;
+        font-style: normal !important;
+        font-weight: normal !important;
+        font-variant: normal !important;
+        text-transform: none !important;
+        line-height: 1 !important;
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale !important;
+      }
+      
+      /* Flag icon for First Fencing Class */
+      .et_pb_blurb_8 .et-pb-icon::before {
+        content: "\e04d" !important;
+      }
+      
+      /* Person with arms up icon for Kids Class */
+      .et_pb_blurb_9 .et-pb-icon::before {
+        content: "\e08c" !important;
+      }
+      
+      /* Person standing icon for Youth Class */
+      .et_pb_blurb_10 .et-pb-icon::before {
+        content: "\e08d" !important;
+      }
+      
+      /* Trophy icon for Adult Member Class */
+      .et_pb_blurb_11 .et-pb-icon::before {
+        content: "\e0ac" !important;
+      }
       /* Fix coaches section alignment and symmetry */
       .et_pb_row_16 {
         display: flex !important;
