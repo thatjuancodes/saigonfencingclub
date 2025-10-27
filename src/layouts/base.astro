@@ -4,12 +4,21 @@ import '@/styles/global.css';
 export interface Props {
   title?: string;
   description?: string;
+  keywords?: string;
+  image?: string;
+  url?: string;
 }
 
 const {
-  title = 'Saigon Fencing – Saigon Fencing Club',
-  description = 'Saigon’s premier destination for fencing, basketball, pickleball, and high-performance training in Ho Chi Minh City.'
+  title = 'Saigon Fencing – Premier Fencing Club in Ho Chi Minh City',
+  description = 'Join Saigon\'s premier fencing club! Expert coaching for all ages (4+), from beginner to competitive level. Located in Ho Chi Minh City. Book your trial class today.',
+  keywords = 'fencing club Ho Chi Minh City, fencing lessons Vietnam, sword fighting classes Saigon, youth fencing programs, adult fencing training, competitive fencing coaching',
+  image = '/legacy/logo_trans_web.png',
+  url = 'https://saigonfencing.com'
 } = Astro.props as Props;
+
+const fullTitle = title;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://saigonfencing.com');
 ---
 
 <!DOCTYPE html>
@@ -17,9 +26,93 @@ const {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
+    
+    <!-- Basic Meta Tags -->
+    <title>{fullTitle}</title>
     <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content="Saigon Fencing Club" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonicalURL} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.site || 'https://saigonfencing.com')} />
+    <meta property="og:site_name" content="Saigon Fencing Club" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL(image, Astro.site || 'https://saigonfencing.com')} />
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/legacy/logo_trans_web.png" />
+    <link rel="apple-touch-icon" href="/legacy/logo_trans_web.png" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "SportsActivityLocation", "EducationalOrganization"],
+      "name": "Saigon Fencing Club",
+      "description": "Premier fencing club in Ho Chi Minh City offering professional coaching for all ages from beginners to competitive levels.",
+      "url": "https://saigonfencing.com",
+      "logo": "https://saigonfencing.com/legacy/logo_trans_web.png",
+      "image": [
+        "https://saigonfencing.com/legacy/logo_trans_web.png"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ho Chi Minh City",
+        "addressCountry": "VN"
+      },
+      "telephone": ["+84945481728", "+84901338960"],
+      "email": "saigon.fencing@gmail.com",
+      "priceRange": "$$",
+      "openingHours": [
+        "Sa 08:30-19:00",
+        "Su 13:00-14:00",
+        "Tu 19:00-20:30",
+        "Th 19:00-20:30"
+      ],
+      "sameAs": [],
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Preparatory Class (Ages 4-5)",
+          "description": "Our Prep classes prepare our young fencers with good agility, balance, and coordination",
+          "category": "Youth Training"
+        },
+        {
+          "@type": "Offer", 
+          "name": "Kids Class (Ages 6-10)",
+          "description": "They will learn footwork, bladework, fencing tactics and etiquette, physical conditioning",
+          "category": "Youth Training"
+        },
+        {
+          "@type": "Offer",
+          "name": "Youth Class (Ages 11-17)", 
+          "description": "This Youth programme is a great way for teens to learn a new sport and get a good mental and physical workout",
+          "category": "Youth Training"
+        },
+        {
+          "@type": "Offer",
+          "name": "Adult Fencing Classes",
+          "description": "Catered to busy adults, one can sign up for a 4 session beginner class as a group or schedule private lessons",
+          "category": "Adult Training"
+        }
+      ],
+      "sport": "Fencing",
+      "hasMap": "https://saigonfencing.com/legacy/embed.html"
+    }
+    </script>
+    
     <slot name="head" />
   </head>
   <body class="home wp-singular page-template-default page page-id-17 wp-custom-logo wp-theme-Divi theme-Divi woocommerce-js tribe-js et_pb_button_helper_class et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db chrome" style="overflow-x: hidden;">
