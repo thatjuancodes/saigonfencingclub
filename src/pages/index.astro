@@ -228,49 +228,46 @@ import BaseLayout from '@/layouts/base.astro';
       .et_pb_blurb_9 .et-pb-icon,
       .et_pb_blurb_10 .et-pb-icon,
       .et_pb_blurb_11 .et-pb-icon {
-        display: inline-flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        width: 80px !important;
-        height: 80px !important;
+        display: inline-block !important;
+        width: 64px !important;
+        height: 64px !important;
         font-size: 0 !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
       }
       
+      /* Hide any pseudo-elements that might show broken icons */
       .et_pb_blurb_8 .et-pb-icon::before,
+      .et_pb_blurb_8 .et-pb-icon::after,
       .et_pb_blurb_9 .et-pb-icon::before,
+      .et_pb_blurb_9 .et-pb-icon::after,
       .et_pb_blurb_10 .et-pb-icon::before,
-      .et_pb_blurb_11 .et-pb-icon::before {
-        font-size: 48px !important;
-        color: #b39d64 !important;
-        font-family: "ETmodules" !important;
-        speak: none !important;
-        font-style: normal !important;
-        font-weight: normal !important;
-        font-variant: normal !important;
-        text-transform: none !important;
-        line-height: 1 !important;
-        -webkit-font-smoothing: antialiased !important;
-        -moz-osx-font-smoothing: grayscale !important;
+      .et_pb_blurb_10 .et-pb-icon::after,
+      .et_pb_blurb_11 .et-pb-icon::before,
+      .et_pb_blurb_11 .et-pb-icon::after {
+        display: none !important;
+        content: none !important;
       }
       
       /* Flag icon for First Fencing Class */
-      .et_pb_blurb_8 .et-pb-icon::before {
-        content: "\e04d" !important;
+      .et_pb_blurb_8 .et-pb-icon {
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23b39d64"><path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"/></svg>') !important;
       }
       
       /* Person with arms up icon for Kids Class */
-      .et_pb_blurb_9 .et-pb-icon::before {
-        content: "\e08c" !important;
+      .et_pb_blurb_9 .et-pb-icon {
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23b39d64"><path d="M12 2C10.9 2 10 2.9 10 4s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-1 18H9v-7H7v7H5v-9.78A2.5 2.5 0 0 1 7.5 8h1A2.5 2.5 0 0 1 11 10.22V12h2v-1.78A2.5 2.5 0 0 1 15.5 8h1a2.5 2.5 0 0 1 2.5 2.22V20h-2v-7h-2v7h-2z"/></svg>') !important;
       }
       
       /* Person standing icon for Youth Class */
-      .et_pb_blurb_10 .et-pb-icon::before {
-        content: "\e08d" !important;
+      .et_pb_blurb_10 .et-pb-icon {
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23b39d64"><path d="M12 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM6.5 21h2v-6h1v-5c0-1.1.9-2 2-2h1c1.1 0 2 .9 2 2v5h1v6h2V10.5c0-1.93-1.57-3.5-3.5-3.5h-3C9.57 7 8 8.57 8 10.5V21z"/></svg>') !important;
       }
       
       /* Trophy icon for Adult Member Class */
-      .et_pb_blurb_11 .et-pb-icon::before {
-        content: "\e0ac" !important;
+      .et_pb_blurb_11 .et-pb-icon {
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23b39d64"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H7v2h10v-2h-4v-3.1a5.01 5.01 0 0 0 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm7 6c-1.65 0-3-1.35-3-3V5h6v6c0 1.65-1.35 3-3 3zm7-6c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>') !important;
       }
       /* Fix coaches section alignment and symmetry */
       .et_pb_row_16 {
