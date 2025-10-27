@@ -88,13 +88,13 @@ function formatDate(date: Date): string {
                       </div>
                     </div>
                     
-                    <div class="articles-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; margin-top: 40px;">
+                    <div class="articles-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; margin-top: 40px;">
                       {featuredArticles.map((article) => (
                         <article class="article-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: all 0.3s ease; border: 1px solid #e5e5e5;">
                           {article.data.image && (
-                            <div class="article-image" style="height: 180px; background: linear-gradient(135deg, #b39d64, #8a7a4f); display: flex; align-items: center; justify-content: center; position: relative;">
-                              <img src={article.data.image} alt={article.data.title} style="max-width: 70px; max-height: 70px; filter: brightness(0) invert(1);" />
-                              <div style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.2); color: white; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;">FEATURED</div>
+                            <div class="article-image" style={`height: 200px; background: url('${article.data.image}') center center; background-size: cover; position: relative; border-radius: 10px 10px 0 0;`}>
+                              <div style="position: absolute; top: 15px; right: 15px; background: rgba(255,255,255,0.9); color: #b39d64; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;">FEATURED</div>
+                              <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); height: 80px;"></div>
                             </div>
                           )}
                           <div class="article-content" style="padding: 30px;">
@@ -261,23 +261,21 @@ function formatDate(date: Date): string {
     /* Responsive design */
     @media (max-width: 1024px) {
       .articles-grid {
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+        grid-template-columns: repeat(2, 1fr) !important;
         gap: 30px !important;
       }
     }
 
     @media (max-width: 768px) {
+      .articles-grid {
+        grid-template-columns: 1fr !important;
+      }
       .container {
         padding-top: 40px !important;
       }
       
       .et_pb_section {
         padding: 40px 0 !important;
-      }
-      
-      .articles-grid {
-        grid-template-columns: 1fr !important;
-        gap: 25px !important;
       }
       
       .article-card, .article-item {

@@ -3,7 +3,7 @@ title: "From the Sofa to the Piste; Fencer Spotlight: Michael"
 description: "Meet Michael Lin, the number 1 ranked fencer at Saigon Fencing Club. This 18-year-old SSIS senior shares his inspiring journey from sibling rivalry to international competition."
 author: "admin"
 publishDate: 2024-09-23
-image: "/legacy/features-first-icon.png"
+image: "/images/articles/SaigonFencingClub-e1758602655309-1024x441.jpg"
 tags: ["fencing story", "spotlight", "member profile", "competition"]
 featured: true
 ---
@@ -20,7 +20,7 @@ They fell in love with it. They started making lots of friends in the fencing co
 
 Now living in Saigon, Michael has continued to refine his skills. And just this past March, he proudly represented the Saigon Fencing Club at the 4th Western Cup in Phnom Penh, Cambodia. He was able to apply his skills on an international stage. But more than just competing, he's also taken on a leadership role at his school, founding the SSIS fencing club to share his passion and mentor the next generation of fencers.
 
-![Michael at the 4th Western Cup](https://placeholder-image-url.com/michael-western-cup.jpg)
+![Michael at the 4th Western Cup](/images/articles/SaigonFencingClub-e1758602655309-1024x441.jpg)
 *Michael is the 4th person from the right.*  
 *Fencers from the Left: Joshua, Pham Anh, Anastasia, Shaun, Michael, Paul, Jasmine, Anu*
 
