@@ -21,21 +21,195 @@ import BaseLayout from '@/layouts/base.astro';
       header nav a:hover {
         color: #b39d64 !important; /* brand gold color */
       }
+      /* Footer Section Styling */
+      .et_pb_section_9 {
+        background: #1a1f35 !important;
+        padding: 60px 20px 40px !important;
+        text-align: center !important;
+      }
+      
+      .et_pb_section_9 .et_pb_row {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+      }
+      
+      .et_pb_section_9 .et_pb_column {
+        width: 100% !important;
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+      }
+      
       /* Center footer logo */
       .et_pb_image_0,
       .et_pb_module.et_pb_image.et_pb_image_0 {
         text-align: center !important;
-        margin: 0 auto !important;
+        margin: 0 auto 30px !important;
         display: block !important;
+        width: 100% !important;
       }
       .et_pb_image_0 .et_pb_image_wrap,
       .et_pb_image_0 span.et_pb_image_wrap {
         display: inline-block !important;
         margin: 0 auto !important;
+        text-align: center !important;
       }
       .et_pb_image_0 img {
         margin: 0 auto !important;
         display: block !important;
+        max-width: 150px !important;
+        height: auto !important;
+      }
+      
+      /* Footer Button Wrapper */
+      .et_pb_button_6_wrapper {
+        text-align: center !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        margin: 20px 0 30px !important;
+      }
+      
+      /* Footer Button Styling */
+      .et_pb_button_6 {
+        background: white !important;
+        color: #1e3a5f !important;
+        font-family: 'Poppins', Helvetica, Arial, sans-serif !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        letter-spacing: 2px !important;
+        text-transform: uppercase !important;
+        padding: 18px 60px !important;
+        border-radius: 50px !important;
+        border: none !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+        transition: all 0.3s ease !important;
+        display: inline-block !important;
+        text-align: center !important;
+      }
+      
+      .et_pb_button_6:hover {
+        background: #f0f0f0 !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2) !important;
+      }
+      
+      /* Footer Contact Text */
+      .et_pb_text_19 {
+        margin-top: 30px !important;
+        text-align: center !important;
+        width: 100% !important;
+      }
+      
+      .et_pb_text_19 .et_pb_text_inner {
+        color: white !important;
+        font-family: 'Poppins', Helvetica, Arial, sans-serif !important;
+        font-size: 16px !important;
+        line-height: 1.8 !important;
+        text-align: center !important;
+      }
+      
+      .et_pb_text_19 .et_pb_text_inner p {
+        text-align: center !important;
+        margin: 0 auto !important;
+      }
+      
+      .et_pb_text_19 strong {
+        font-weight: 600 !important;
+        font-size: 20px !important;
+        display: block !important;
+        margin-bottom: 8px !important;
+        text-align: center !important;
+      }
+      
+      /* Footer Bottom Styling */
+      #main-footer {
+        background: #1a1f35 !important;
+        padding: 0 !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+      }
+      
+      #footer-bottom {
+        text-align: center !important;
+        padding: 30px 20px 20px !important;
+      }
+      
+      #footer-bottom .container {
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+        padding: 0 !important;
+      }
+      
+      /* Social Icons */
+      #footer-bottom .et-social-icons {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 15px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+        float: none !important;
+      }
+      
+      #footer-bottom .et-social-icon {
+        margin: 0 !important;
+        margin-left: 0 !important;
+      }
+      
+      #footer-bottom .et-social-icon a {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 45px !important;
+        height: 45px !important;
+        background: rgba(255, 255, 255, 0.08) !important;
+        border-radius: 50% !important;
+        color: rgba(255, 255, 255, 0.7) !important;
+        transition: all 0.3s ease !important;
+        text-decoration: none !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        position: relative !important;
+        font-size: 0 !important;
+      }
+      
+      #footer-bottom .et-social-icon a::before,
+      #footer-bottom .et-social-icon a::after {
+        display: none !important;
+        content: none !important;
+      }
+      
+      #footer-bottom .et-social-icon a:hover {
+        background: rgba(255, 255, 255, 0.15) !important;
+        color: white !important;
+        transform: translateY(-2px) !important;
+        border-color: rgba(255, 255, 255, 0.2) !important;
+        opacity: 1 !important;
+      }
+      
+      #footer-bottom .et-social-icon a svg {
+        width: 20px !important;
+        height: 20px !important;
+        fill: currentColor !important;
+        display: block !important;
+      }
+      
+      #footer-bottom .et-social-icon span {
+        display: none !important;
+      }
+      
+      /* Footer Copyright */
+      #footer-info {
+        color: rgba(255, 255, 255, 0.7) !important;
+        font-family: 'Poppins', Helvetica, Arial, sans-serif !important;
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+        margin: 0 !important;
       }
       /* Fix coaches section alignment and symmetry */
       .et_pb_row_16 {
@@ -124,7 +298,232 @@ import BaseLayout from '@/layouts/base.astro';
         color: #666 !important;
         text-align: center !important;
       }
+      
+      /* Rankings Table Styling */
+      #Rankings .et_pb_slide_content {
+        overflow-x: auto !important;
+        padding: 20px 0 !important;
+      }
+      
+      #Rankings table {
+        width: 100% !important;
+        min-width: 600px !important;
+        border-collapse: collapse !important;
+        margin: 20px auto !important;
+        background: white !important;
+        border-radius: 8px !important;
+        overflow: hidden !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+        font-family: 'Poppins', Helvetica, Arial, sans-serif !important;
+      }
+      
+      #Rankings table th,
+      #Rankings table td {
+        padding: 12px 16px !important;
+        text-align: center !important;
+        border: 1px solid #e0e0e0 !important;
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+      }
+      
+      #Rankings table tr:first-child td {
+        background: #b39d64 !important;
+        color: white !important;
+        font-weight: 600 !important;
+        font-size: 15px !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
+      }
+      
+      #Rankings table tr:nth-child(even) {
+        background: #f8f9fa !important;
+      }
+      
+      #Rankings table tr:hover {
+        background: #f0f0f0 !important;
+        transition: background 0.2s ease !important;
+      }
+      
+      #Rankings table tr:first-child:hover {
+        background: #b39d64 !important;
+      }
+      
+      /* Rankings section title */
+      #Rankings .et_pb_slide_title {
+        font-family: 'Poppins', Helvetica, Arial, sans-serif !important;
+        font-size: 28px !important;
+        font-weight: 600 !important;
+        color: #333 !important;
+        text-align: center !important;
+        margin-bottom: 20px !important;
+      }
+      
+      /* Responsive scrolling indicator */
+      #Rankings .et_pb_slide_content::after {
+        content: "← Scroll horizontally to see more →" !important;
+        display: block !important;
+        text-align: center !important;
+        font-size: 12px !important;
+        color: #999 !important;
+        margin-top: 10px !important;
+        font-style: italic !important;
+      }
+      
+      @media (min-width: 768px) {
+        #Rankings .et_pb_slide_content::after {
+          display: none !important;
+        }
+      }
+      
+      /* Tabbed Rankings Interface */
+      .rankings-tabs-container {
+        width: 100% !important;
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+        padding: 20px !important;
+        background: white !important;
+        border-radius: 12px !important;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08) !important;
+      }
+      
+      .rankings-tabs-nav {
+        display: flex !important;
+        justify-content: center !important;
+        margin-bottom: 30px !important;
+        border-bottom: 2px solid #f0f0f0 !important;
+      }
+      
+      .tab-button {
+        background: none !important;
+        border: none !important;
+        padding: 15px 30px !important;
+        font-family: 'Poppins', Helvetica, Arial, sans-serif !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        color: #333 !important;
+        cursor: pointer !important;
+        border-bottom: 3px solid transparent !important;
+        transition: all 0.3s ease !important;
+        margin: 0 10px !important;
+        background: #f8f9fa !important;
+        border-radius: 8px 8px 0 0 !important;
+      }
+      
+      .tab-button:hover {
+        color: #b39d64 !important;
+        background: #f0f0f0 !important;
+      }
+      
+      .tab-button.active {
+        color: white !important;
+        background: #b39d64 !important;
+        border-bottom-color: #b39d64 !important;
+        font-weight: 600 !important;
+      }
+      
+      .rankings-tabs-content {
+        position: relative !important;
+      }
+      
+      .tab-content {
+        display: none !important;
+      }
+      
+      .tab-content.active {
+        display: block !important;
+      }
+      
+      .rankings-table-wrapper {
+        overflow-x: auto !important;
+        margin: 20px 0 !important;
+      }
+      
+      .rankings-table {
+        width: 100% !important;
+        min-width: 600px !important;
+        border-collapse: collapse !important;
+        background: white !important;
+        border-radius: 8px !important;
+        overflow: hidden !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+        font-family: 'Poppins', Helvetica, Arial, sans-serif !important;
+      }
+      
+      .rankings-table thead th {
+        background: #b39d64 !important;
+        color: white !important;
+        padding: 15px 20px !important;
+        font-weight: 600 !important;
+        font-size: 15px !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
+        text-align: center !important;
+        border: none !important;
+      }
+      
+      .rankings-table tbody td {
+        padding: 12px 20px !important;
+        text-align: center !important;
+        border-bottom: 1px solid #f0f0f0 !important;
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        color: #333 !important;
+        font-weight: 500 !important;
+      }
+      
+      .rankings-table tbody tr:nth-child(even) {
+        background: #f8f9fa !important;
+      }
+      
+      .rankings-table tbody tr:hover {
+        background: #f0f0f0 !important;
+        transition: background 0.2s ease !important;
+      }
+      
+      @media (max-width: 768px) {
+        .rankings-tabs-nav {
+          flex-direction: column !important;
+          align-items: center !important;
+        }
+        
+        .tab-button {
+          margin: 5px 0 !important;
+          padding: 12px 25px !important;
+          font-size: 14px !important;
+        }
+        
+        .rankings-table-wrapper::after {
+          content: "← Scroll horizontally to see more →" !important;
+          display: block !important;
+          text-align: center !important;
+          font-size: 12px !important;
+          color: #999 !important;
+          margin-top: 10px !important;
+          font-style: italic !important;
+        }
+      }
+      
     </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            const targetTab = this.getAttribute('data-tab');
+            
+            // Remove active class from all buttons and contents
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Add active class to clicked button and corresponding content
+            this.classList.add('active');
+            document.getElementById(targetTab + '-tab').classList.add('active');
+          });
+        });
+      });
+    </script>
     <link rel="alternate" type="application/rss+xml" title="Saigon Fencing » Feed" href="https://saigonfencing.com/feed/">
     <link rel="alternate" type="application/rss+xml" title="Saigon Fencing » Comments Feed" href="https://saigonfencing.com/comments/feed/">
     <link rel="alternate" type="text/calendar" title="Saigon Fencing » iCal Feed" href="https://saigonfencing.com/events/?ical=1">
@@ -1000,220 +1399,92 @@ import BaseLayout from '@/layouts/base.astro';
 				
 				
 				
-  				<div class="et_pb_module et_pb_slider et_pb_slider_0 et_pb_slider_fullwidth_off et_pb_bg_layout_dark" data-active-slide="et_pb_slide_0">
-  				<div class="et_pb_slides">
-  					<div class="et_pb_slide et_pb_slide_0 et_pb_bg_layout_dark et_pb_media_alignment_center et-pb-active-slide" data-slide-id="et_pb_slide_0">
-				
-				
-  				<div class="et_pb_container clearfix" style="height: 1974.52px;">
-  					<div class="et_pb_slider_container_inner">
-						
-  						<div class="et_pb_slide_description">
-  							<h2 class="et_pb_slide_title">SENIOR FENCERS</h2><div class="et_pb_slide_content"><p>&nbsp;</p>
-  <p><google-sheets-html-origin></google-sheets-html-origin></p>
-  <table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" cellpadding="0" dir="ltr" border="1" data-sheets-root="1" data-sheets-baot="1">
-  <colgroup>
-  <col width="100">
-  <col width="100">
-  <col width="100">
-  <col width="100"></colgroup>
-  <tbody>
-  <tr>
-  <td style="text-align: center;">Rank</td>
-  <td style="text-align: center;">Points</td>
-  <td style="text-align: center;">Name</td>
-  <td style="text-align: center;">
-  <div>
-  <div>Category &amp; Weapon</div>
-  </div>
-  </td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>1</td>
-  <td>98</td>
-  <td>Michael</td>
-  <td>
-  <div>
-  <div>Men’s Sabre; Men’s Foil</div>
-  </div>
-  </td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>2</td>
-  <td>58</td>
-  <td>Dorcas</td>
-  <td>Women’s Foil</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>3</td>
-  <td>58</td>
-  <td>Theodore</td>
-  <td>Men’s Epee</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>4</td>
-  <td>52</td>
-  <td>Tien</td>
-  <td>Women’s Foil</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>5</td>
-  <td>52</td>
-  <td>Pham Anh</td>
-  <td>
-  <div>
-  <div>Men’s Sabre; Men’s Foil</div>
-  </div>
-  </td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>6</td>
-  <td>46</td>
-  <td>Joseph</td>
-  <td>Men’s Sabre</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>7</td>
-  <td>46</td>
-  <td>Anu</td>
-  <td>Women’s Foil</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>8</td>
-  <td>40</td>
-  <td>Carlos</td>
-  <td>Men’s Epee</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>9</td>
-  <td>40</td>
-  <td>Antonio</td>
-  <td>Men’s Foil</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>10</td>
-  <td>34</td>
-  <td>Sam</td>
-  <td>Men’s Foil</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>11</td>
-  <td>34</td>
-  <td>Alicia</td>
-  <td>Women’s Foil</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>12</td>
-  <td>32</td>
-  <td>Jasmine</td>
-  <td>Women’s Foil</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>13</td>
-  <td>32</td>
-  <td>Anastasia</td>
-  <td>Women’s Epee</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>14</td>
-  <td>32</td>
-  <td>Anita</td>
-  <td>Women’s Epee</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>15</td>
-  <td>32</td>
-  <td>Neil</td>
-  <td>Men’s Foil</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>16</td>
-  <td>26</td>
-  <td>Jeddie</td>
-  <td>Men’s Foil</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>17</td>
-  <td>26</td>
-  <td>Ren</td>
-  <td>Men’s Epee</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>18</td>
-  <td>22</td>
-  <td>Bun</td>
-  <td>Men’s Foil</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>19</td>
-  <td>20</td>
-  <td>Duy</td>
-  <td>Men’s Sabre</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>20</td>
-  <td>20</td>
-  <td>Luke H.</td>
-  <td>Men’s Sabre</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>21</td>
-  <td>20</td>
-  <td>Nathan</td>
-  <td>Men’s Epee</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>22</td>
-  <td>20</td>
-  <td>Nam</td>
-  <td>Men’s Sabre</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>23</td>
-  <td>20</td>
-  <td>Kelsey</td>
-  <td>Women’s Foil</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>24</td>
-  <td>14</td>
-  <td>Zephyr</td>
-  <td>Men’s Foil</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>25</td>
-  <td>14</td>
-  <td>Zara</td>
-  <td>Women’s Foil</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>26</td>
-  <td>14</td>
-  <td>Sebastian</td>
-  <td>Men’s Foil</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>27</td>
-  <td>14</td>
-  <td>Angelina</td>
-  <td>Women’s Foil</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>28</td>
-  <td>14</td>
-  <td>Phuc</td>
-  <td>Men’s Foil</td>
-  </tr>
-  <tr style="text-align: center;">
-  <td>29</td>
-  <td>14</td>
-  <td>Bao</td>
-  <td>Women’s Foil</td>
-  </tr>
-  </tbody>
-  </table>
-  <p>&nbsp;</p>
-  <p style="text-align: center;"></p></div>
+  				<div class="rankings-tabs-container">
+  					<!-- Tab Navigation -->
+  					<div class="rankings-tabs-nav">
+  						<button class="tab-button active" data-tab="senior">Senior Fencers</button>
+  						<button class="tab-button" data-tab="youth">Youth Fencers (13 & Under)</button>
+  					</div>
+  					
+  					<!-- Tab Content -->
+  					<div class="rankings-tabs-content">
+  						<!-- Senior Fencers Tab -->
+  						<div id="senior-tab" class="tab-content active">
+  							<div class="rankings-table-wrapper">
+  								<table class="rankings-table">
+  									<thead>
+  										<tr>
+  											<th>Rank</th>
+  											<th>Points</th>
+  											<th>Name</th>
+  											<th>Category & Weapon</th>
+  										</tr>
+  									</thead>
+  									<tbody>
+  										<tr><td>1</td><td>98</td><td>Michael</td><td>Men's Sabre; Men's Foil</td></tr>
+  										<tr><td>2</td><td>58</td><td>Dorcas</td><td>Women's Foil</td></tr>
+  										<tr><td>3</td><td>58</td><td>Theodore</td><td>Men's Epee</td></tr>
+  										<tr><td>4</td><td>52</td><td>Tien</td><td>Women's Foil</td></tr>
+  										<tr><td>5</td><td>52</td><td>Daniel</td><td>Men's Epee</td></tr>
+  										<tr><td>6</td><td>46</td><td>Josh</td><td>Men's Epee</td></tr>
+  										<tr><td>7</td><td>46</td><td>Anu</td><td>Women's Foil</td></tr>
+  										<tr><td>8</td><td>40</td><td>Carlos</td><td>Men's Epee</td></tr>
+  										<tr><td>9</td><td>40</td><td>Antonio</td><td>Men's Foil</td></tr>
+  										<tr><td>10</td><td>34</td><td>Sam</td><td>Men's Foil</td></tr>
+  										<tr><td>11</td><td>34</td><td>Alicia</td><td>Women's Foil</td></tr>
+  										<tr><td>12</td><td>32</td><td>Jasmine</td><td>Women's Foil</td></tr>
+  										<tr><td>13</td><td>32</td><td>Anastasia</td><td>Women's Epee</td></tr>
+  										<tr><td>14</td><td>32</td><td>Anita</td><td>Women's Epee</td></tr>
+  										<tr><td>15</td><td>28</td><td>Grace</td><td>Women's Foil</td></tr>
+  										<tr><td>16</td><td>28</td><td>Jimmy</td><td>Men's Epee</td></tr>
+  										<tr><td>17</td><td>26</td><td>Stephanie</td><td>Women's Foil</td></tr>
+  										<tr><td>18</td><td>22</td><td>Nicolas</td><td>Men's Epee</td></tr>
+  										<tr><td>19</td><td>20</td><td>Nolan</td><td>Men's Epee</td></tr>
+  										<tr><td>20</td><td>20</td><td>Christine</td><td>Women's Epee</td></tr>
+  									</tbody>
+  								</table>
+  							</div>
+  						</div>
+  						
+  						<!-- Youth Fencers Tab -->
+  						<div id="youth-tab" class="tab-content">
+  							<div class="rankings-table-wrapper">
+  								<table class="rankings-table">
+  									<thead>
+  										<tr>
+  											<th>Rank</th>
+  											<th>Points</th>
+  											<th>Name</th>
+  											<th>Category & Weapon</th>
+  										</tr>
+  									</thead>
+  									<tbody>
+  										<tr><td>1</td><td>58</td><td>Le Anh</td><td>Boys' Foil</td></tr>
+  										<tr><td>2</td><td>52</td><td>Maria</td><td>Girls' Foil</td></tr>
+  										<tr><td>3</td><td>46</td><td>Ruy</td><td>Boys' Foil</td></tr>
+  										<tr><td>4</td><td>46</td><td>Vasya</td><td>Boys' Foil</td></tr>
+  										<tr><td>5</td><td>40</td><td>Shiny</td><td>Girls' Foil</td></tr>
+  										<tr><td>6</td><td>34</td><td>Oskar</td><td>Boys' Foil</td></tr>
+  										<tr><td>7</td><td>34</td><td>Mia</td><td>Girls' Foil</td></tr>
+  										<tr><td>8</td><td>34</td><td>Livi</td><td>Girls' Foil</td></tr>
+  										<tr><td>9</td><td>32</td><td>Rio</td><td>Girls' Foil</td></tr>
+  										<tr><td>10</td><td>28</td><td>MeeMee</td><td>Boys' Foil</td></tr>
+  										<tr><td>11</td><td>26</td><td>Evelyn</td><td>Girls' Foil</td></tr>
+  										<tr><td>12</td><td>22</td><td>Diep</td><td>Girls' Foil</td></tr>
+  										<tr><td>13</td><td>22</td><td>Lucille</td><td>Girls' Foil</td></tr>
+  										<tr><td>14</td><td>22</td><td>Olivia</td><td>Girls' Foil</td></tr>
+  										<tr><td>15</td><td>20</td><td>Rikki</td><td>Boys' Foil</td></tr>
+  										<tr><td>16</td><td>20</td><td>Aung</td><td>Boys' Foil</td></tr>
+  										<tr><td>17</td><td>20</td><td>Ashley</td><td>Girls' Foil</td></tr>
+  										<tr><td>18</td><td>18</td><td>Ava</td><td>Girls' Foil</td></tr>
+  										<tr><td>19</td><td>18</td><td>Irene</td><td>Girls' Foil</td></tr>
+  										<tr><td>20</td><td>16</td><td>Alexander</td><td>Boys' Foil</td></tr>
+  									</tbody>
+  								</table>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
 							
   						</div>
   					</div>
@@ -1221,197 +1492,6 @@ import BaseLayout from '@/layouts/base.astro';
 				
 				
 				
-  			</div>
-  			<div class="et_pb_slide et_pb_slide_1 et_pb_bg_layout_dark et_pb_media_alignment_center" data-slide-id="et_pb_slide_1">
-				
-				
-  				<div class="et_pb_container clearfix" style="height: 1974.52px;">
-  					<div class="et_pb_slider_container_inner">
-						
-  						<div class="et_pb_slide_description">
-  							<h2 class="et_pb_slide_title">Y13 FENCERS (13y/o &amp; Under)</h2><div class="et_pb_slide_content"><p><google-sheets-html-origin></google-sheets-html-origin></p>
-  <table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" cellpadding="0" dir="ltr" border="1" data-sheets-root="1" data-sheets-baot="1" style="width: 0%; margin-left: auto; margin-right: auto;">
-  <colgroup>
-  <col width="100">
-  <col width="100">
-  <col width="100">
-  <col width="100"></colgroup>
-  <tbody>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">Rank</td>
-  <td style="text-align: center; width: 71.53125px;">Points</td>
-  <td style="text-align: center; width: 79.34375px;">Name</td>
-  <td style="text-align: center; width: 80.4375px;">
-  <div>
-  <div>Category &amp; Weapon</div>
-  </div>
-  </td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">1</td>
-  <td style="text-align: center; width: 71.53125px;">58</td>
-  <td style="text-align: center; width: 79.34375px;">Le Anh</td>
-  <td style="text-align: center; width: 80.4375px;">Boys’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">2</td>
-  <td style="text-align: center; width: 71.53125px;">52</td>
-  <td style="text-align: center; width: 79.34375px;">Maria</td>
-  <td style="text-align: center; width: 80.4375px;">Girls’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">3</td>
-  <td style="text-align: center; width: 71.53125px;">46</td>
-  <td style="text-align: center; width: 79.34375px;">Ruy</td>
-  <td style="text-align: center; width: 80.4375px;">Boys’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">4</td>
-  <td style="text-align: center; width: 71.53125px;">46</td>
-  <td style="text-align: center; width: 79.34375px;">Vasya</td>
-  <td style="text-align: center; width: 80.4375px;">Boys’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">5</td>
-  <td style="text-align: center; width: 71.53125px;">40</td>
-  <td style="text-align: center; width: 79.34375px;">Shiny</td>
-  <td style="text-align: center; width: 80.4375px;">Girls’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">6</td>
-  <td style="text-align: center; width: 71.53125px;">34</td>
-  <td style="text-align: center; width: 79.34375px;">Oskar</td>
-  <td style="text-align: center; width: 80.4375px;">Boys’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">7</td>
-  <td style="text-align: center; width: 71.53125px;">34</td>
-  <td style="text-align: center; width: 79.34375px;">Mia</td>
-  <td style="text-align: center; width: 80.4375px;">Girls’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">8</td>
-  <td style="text-align: center; width: 71.53125px;">34</td>
-  <td style="text-align: center; width: 79.34375px;">Livi</td>
-  <td style="text-align: center; width: 80.4375px;">Girls’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">9</td>
-  <td style="text-align: center; width: 71.53125px;">32</td>
-  <td style="text-align: center; width: 79.34375px;">Rio</td>
-  <td style="text-align: center; width: 80.4375px;">Girls’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">10</td>
-  <td style="text-align: center; width: 71.53125px;">28</td>
-  <td style="text-align: center; width: 79.34375px;">MeeMee</td>
-  <td style="text-align: center; width: 80.4375px;">Boys’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">11</td>
-  <td style="text-align: center; width: 71.53125px;">26</td>
-  <td style="text-align: center; width: 79.34375px;">Evelyn</td>
-  <td style="text-align: center; width: 80.4375px;">Girls’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">12</td>
-  <td style="text-align: center; width: 71.53125px;">22</td>
-  <td style="text-align: center; width: 79.34375px;">Diep</td>
-  <td style="text-align: center; width: 80.4375px;">Girls’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">13</td>
-  <td style="text-align: center; width: 71.53125px;">22</td>
-  <td style="text-align: center; width: 79.34375px;">Anh Paul</td>
-  <td style="text-align: center; width: 80.4375px;">Boys’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">14</td>
-  <td style="text-align: center; width: 71.53125px;">20</td>
-  <td style="text-align: center; width: 79.34375px;">Addison</td>
-  <td style="text-align: center; width: 80.4375px;">Girls’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">15</td>
-  <td style="text-align: center; width: 71.53125px;">20</td>
-  <td style="text-align: center; width: 79.34375px;">Merlin</td>
-  <td style="text-align: center; width: 80.4375px;">Boys’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">16</td>
-  <td style="text-align: center; width: 71.53125px;">14</td>
-  <td style="text-align: center; width: 79.34375px;">Paul</td>
-  <td style="text-align: center; width: 80.4375px;">Boys’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">17</td>
-  <td style="text-align: center; width: 71.53125px;">14</td>
-  <td style="text-align: center; width: 79.34375px;">Marcus</td>
-  <td style="text-align: center; width: 80.4375px;">Boys’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">18</td>
-  <td style="text-align: center; width: 71.53125px;">14</td>
-  <td style="text-align: center; width: 79.34375px;">Cammie</td>
-  <td style="text-align: center; width: 80.4375px;">Girls’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">19</td>
-  <td style="text-align: center; width: 71.53125px;">14</td>
-  <td style="text-align: center; width: 79.34375px;">Shun</td>
-  <td style="text-align: center; width: 80.4375px;">Boys’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">20</td>
-  <td style="text-align: center; width: 71.53125px;">14</td>
-  <td style="text-align: center; width: 79.34375px;">Jayde</td>
-  <td style="text-align: center; width: 80.4375px;">Girls’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">21</td>
-  <td style="text-align: center; width: 71.53125px;">14</td>
-  <td style="text-align: center; width: 79.34375px;">Dynthe</td>
-  <td style="text-align: center; width: 80.4375px;">Girls’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">22</td>
-  <td style="text-align: center; width: 71.53125px;">14</td>
-  <td style="text-align: center; width: 79.34375px;">Mavis</td>
-  <td style="text-align: center; width: 80.4375px;">Girls’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">23</td>
-  <td style="text-align: center; width: 71.53125px;">14</td>
-  <td style="text-align: center; width: 79.34375px;">Alston</td>
-  <td style="text-align: center; width: 80.4375px;">Boys’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">24</td>
-  <td style="text-align: center; width: 71.53125px;">14</td>
-  <td style="text-align: center; width: 79.34375px;">Hamza</td>
-  <td style="text-align: center; width: 80.4375px;">Boys’ Foil</td>
-  </tr>
-  <tr>
-  <td style="text-align: center; width: 67.71875px;">25</td>
-  <td style="text-align: center; width: 71.53125px;">8</td>
-  <td style="text-align: center; width: 79.34375px;">Hai</td>
-  <td style="text-align: center; width: 80.4375px;">Boys’ Foil</td>
-  </tr>
-  </tbody>
-  </table></div>
-							
-  						</div>
-  					</div>
-  				</div>
-				
-				
-				
-  			</div>
-			
-  				</div>
-				
-  			<div class="et-pb-slider-arrows"><a class="et-pb-arrow-prev" href="https://saigonfencing.com/#"><span>Previous</span></a><a class="et-pb-arrow-next" href="https://saigonfencing.com/#"><span>Next</span></a></div><div class="et-pb-controllers"><a href="https://saigonfencing.com/#" class="et-pb-active-control">1</a><a href="https://saigonfencing.com/#">2</a></div></div>
-			
   			</div>
 				
 				
@@ -1565,12 +1645,12 @@ import BaseLayout from '@/layouts/base.astro';
 
   	<li class="et-social-icon et-social-facebook">
   		<a href="https://www.facebook.com/SaigonFencing/" class="icon">
-  			<span>Facebook</span>
+  			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
   		</a>
   	</li>
   	<li class="et-social-icon et-social-instagram">
   		<a href="https://www.instagram.com/saigonfencing/" class="icon">
-  			<span>Instagram</span>
+  			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
   		</a>
   	</li>
 
