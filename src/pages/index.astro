@@ -26,6 +26,50 @@ import BaseLayout from '@/layouts/base.astro';
       header nav a:hover {
         color: #b39d64 !important; /* brand gold color */
       }
+      /* "Stop hesitating, Learn today!" Section - Dark Blue Background */
+      .et_pb_section_2 {
+        background: #1a1f35 !important;
+        padding: 60px 20px !important;
+      }
+      
+      .et_pb_section_2 .et_pb_promo {
+        background: transparent !important;
+      }
+      
+      /* Classes Section with Curved Background */
+      .et_pb_section_3 {
+        position: relative !important;
+        background: white !important;
+        padding-bottom: 150px !important;
+        overflow: visible !important;
+      }
+      
+      .et_pb_section_3::after {
+        content: '' !important;
+        position: absolute !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 300px !important;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" preserveAspectRatio="none"><path d="M0,0 Q600,300 1200,0 L1200,300 L0,300 Z" fill="%231a1f35"/></svg>') !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: bottom !important;
+        z-index: 0 !important;
+      }
+      
+      .et_pb_section_3 .et_pb_row {
+        position: relative !important;
+        z-index: 1 !important;
+      }
+      
+      /* Schedules Section - Dark Blue Background */
+      .et_pb_section_4 {
+        background: #1a1f35 !important;
+        padding-top: 80px !important;
+        margin-top: -100px !important;
+      }
+      
       /* Footer Section Styling */
       .et_pb_section_9 {
         background: #1a1f35 !important;
