@@ -20,11 +20,114 @@ import BaseLayout from '@/layouts/base.astro';
         scroll-behavior: smooth;
       }
       
-      header nav a {
-        color: #525252 !important; /* text-neutral-600 equivalent */
+      /* Mobile Menu Button */
+      .mobile-menu-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 32px;
+        height: 32px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 4px;
+        z-index: 100;
       }
-      header nav a:hover {
-        color: #b39d64 !important; /* brand gold color */
+      
+      .hamburger-line {
+        width: 100%;
+        height: 3px;
+        background-color: #525252;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+      }
+      
+      .mobile-menu-button.active .hamburger-line:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+      }
+      
+      .mobile-menu-button.active .hamburger-line:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .mobile-menu-button.active .hamburger-line:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+      }
+      
+      /* Navigation Styles */
+      .main-nav {
+        margin-left: auto;
+      }
+      
+      .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1.5rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .nav-link {
+        color: #525252;
+        text-decoration: none;
+        font-size: 11px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        transition: color 0.2s ease;
+      }
+      
+      .nav-link:hover {
+        color: #b39d64 !important;
+      }
+      
+      /* Mobile Navigation Styles */
+      @media (max-width: 1023px) {
+        .main-nav {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 280px;
+          height: 100vh;
+          background: white;
+          box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+          transition: right 0.3s ease;
+          padding-top: 80px;
+          overflow-y: auto;
+        }
+        
+        .main-nav.active {
+          right: 0;
+        }
+        
+        .nav-list {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0;
+          padding: 20px;
+        }
+        
+        .nav-list li {
+          width: 100%;
+          border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .nav-link {
+          display: block;
+          padding: 16px 0;
+          font-size: 13px;
+          width: 100%;
+        }
+      }
+      
+      /* Desktop Navigation */
+      @media (min-width: 1024px) {
+        .mobile-menu-button {
+          display: none;
+        }
       }
       /* "Stop hesitating, Learn today!" Section - Dark Blue Background */
       .et_pb_section_2 {
@@ -435,6 +538,26 @@ import BaseLayout from '@/layouts/base.astro';
         transform: translateY(-5px) !important;
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12) !important;
       }
+      
+      /* Mobile responsive coach cards */
+      @media (max-width: 767px) {
+        .et_pb_row_16 {
+          flex-direction: column !important;
+        }
+        
+        .et_pb_row_16 .et_pb_column {
+          width: 100% !important;
+          margin-right: 0 !important;
+        }
+        
+        .et_pb_blurb_14,
+        .et_pb_blurb_15 {
+          width: calc(100% - 40px) !important;
+          margin: 15px 20px !important;
+          min-height: auto !important;
+          height: auto !important;
+        }
+      }
       .et_pb_blurb_14 .et_pb_blurb_container,
       .et_pb_blurb_15 .et_pb_blurb_container {
         flex-grow: 1 !important;
@@ -548,6 +671,40 @@ import BaseLayout from '@/layouts/base.astro';
         background: white !important;
         border-radius: 12px !important;
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08) !important;
+      }
+      
+      /* Mobile responsive rankings */
+      @media (max-width: 767px) {
+        .rankings-tabs-container {
+          width: calc(100% - 40px) !important;
+          margin: 0 20px !important;
+          padding: 15px !important;
+        }
+        
+        .rankings-tabs-nav {
+          flex-direction: column !important;
+          gap: 10px !important;
+        }
+        
+        .tab-button {
+          width: 100% !important;
+          margin: 0 !important;
+        }
+        
+        #Rankings table {
+          min-width: 100% !important;
+          font-size: 12px !important;
+        }
+        
+        #Rankings table th,
+        #Rankings table td {
+          padding: 8px 6px !important;
+          font-size: 11px !important;
+        }
+        
+        #Rankings table tr:first-child td {
+          font-size: 12px !important;
+        }
       }
       
       .rankings-tabs-nav {
@@ -789,19 +946,52 @@ import BaseLayout from '@/layouts/base.astro';
     <a class="flex flex-shrink-0 items-center" href="#Home" aria-label="Saigon Fencing home">
       <img src="/legacy/logo_trans_web.png" alt="Saigon Fencing Club logo" class="h-16 w-auto max-h-20" width="80" height="80" loading="lazy" />
     </a>
-    <nav class="ml-auto" aria-label="Primary navigation">
-      <ul class="flex flex-wrap items-center justify-end gap-x-6 gap-y-3 text-[10px] font-medium uppercase tracking-[0.2em] text-neutral-600 md:text-[11px]" style="font-family: 'Poppins', Helvetica, Arial, sans-serif;">
-        <li><a class="text-neutral-600 transition-colors duration-200 hover:!text-brand-gold" href="#Home">Home</a></li>
-        <li><a class="text-neutral-600 transition-colors duration-200 hover:!text-brand-gold" href="#About">About</a></li>
-        <li><a class="text-neutral-600 transition-colors duration-200 hover:!text-brand-gold" href="#Classes">Classes</a></li>
-        <li><a class="text-neutral-600 transition-colors duration-200 hover:!text-brand-gold" href="#Schedules">Schedules</a></li>
-        <li><a class="text-neutral-600 transition-colors duration-200 hover:!text-brand-gold" href="#Rankings">Rankings</a></li>
-        <li><a class="text-neutral-600 transition-colors duration-200 hover:!text-brand-gold" href="#Contact-Us">Contact Us</a></li>
-        <li><a class="text-neutral-600 transition-colors duration-200 hover:!text-brand-gold" href="/articles">Articles</a></li>
+
+    <button id="mobile-menu-button" class="mobile-menu-button lg:hidden" aria-label="Toggle menu" aria-expanded="false">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
+      <ul class="nav-list" style="font-family: 'Poppins', Helvetica, Arial, sans-serif;">
+        <li><a class="nav-link" href="#Home">Home</a></li>
+        <li><a class="nav-link" href="#About">About</a></li>
+        <li><a class="nav-link" href="#Classes">Classes</a></li>
+        <li><a class="nav-link" href="#Schedules">Schedules</a></li>
+        <li><a class="nav-link" href="#Rankings">Rankings</a></li>
+        <li><a class="nav-link" href="#Contact-Us">Contact Us</a></li>
+        <li><a class="nav-link" href="/articles">Articles</a></li>
       </ul>
     </nav>
   </div>
 </header> <!-- #main-header -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mainNav = document.getElementById('main-nav');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    if (mobileMenuButton && mainNav) {
+      mobileMenuButton.addEventListener('click', () => {
+        const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+        mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+        mobileMenuButton.classList.toggle('active');
+        mainNav.classList.toggle('active');
+      });
+
+      // Close menu when clicking on a link
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenuButton.classList.remove('active');
+          mainNav.classList.remove('active');
+          mobileMenuButton.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  });
+</script>
   			<div id="et-main-area">
 	
   <div id="main-content">
