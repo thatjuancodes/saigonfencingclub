@@ -86,6 +86,35 @@ import BaseLayout from '@/layouts/base.astro';
       
       /* Mobile Navigation Styles */
       @media (max-width: 1023px) {
+        html,
+        body {
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+        
+        #page-container {
+          margin-top: 0 !important;
+          padding-top: 0 !important;
+        }
+        
+        header {
+          top: 0 !important;
+          margin-top: 0 !important;
+          padding-top: 0 !important;
+        }
+        
+        header .container {
+          padding-top: 8px !important;
+          padding-bottom: 8px !important;
+          padding-left: 16px !important;
+          padding-right: 16px !important;
+        }
+        
+        header img {
+          height: 48px !important;
+          max-height: 48px !important;
+        }
+        
         .main-nav {
           position: fixed;
           top: 0;
