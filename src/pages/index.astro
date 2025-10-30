@@ -199,12 +199,16 @@ import BaseLayout from '@/layouts/base.astro';
       .et_pb_module.et_pb_image.et_pb_image_0 {
         text-align: center !important;
         margin: 0 auto 30px !important;
-        display: block !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
         width: 100% !important;
       }
       .et_pb_image_0 .et_pb_image_wrap,
       .et_pb_image_0 span.et_pb_image_wrap {
-        display: inline-block !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
         margin: 0 auto !important;
         text-align: center !important;
       }
@@ -213,6 +217,26 @@ import BaseLayout from '@/layouts/base.astro';
         display: block !important;
         max-width: 200px !important;
         height: auto !important;
+      }
+      
+      /* Mobile footer logo centering */
+      @media (max-width: 767px) {
+        .et_pb_section_9 .et_pb_row_22 {
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+        }
+        
+        .et_pb_image_0,
+        .et_pb_module.et_pb_image.et_pb_image_0 {
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+        }
+        
+        .et_pb_image_0 img {
+          max-width: 150px !important;
+        }
       }
       
       /* Footer Button Wrapper */
